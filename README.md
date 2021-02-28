@@ -2,7 +2,7 @@
 
 A RESTful API that switches in the word 'NEIGHBOR', replacing instances of the n-word in song lyrics.
 
-This API uses Express and the Genius API through genius-lyrics npm package.
+This API uses Express and the Genius API through genius-lyrics-api npm package.
 
 ## Description
 
