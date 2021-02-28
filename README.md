@@ -2,7 +2,7 @@
 
 A RESTful API that switches in the word 'NEIGHBOR', replacing instances of the n-word in song lyrics.
 
-This API uses Express and the Genius API through genius-lyrics-api npm package.
+This API uses Express and the Genius API through [genius-lyrics-api](https://github.com/farshed/genius-lyrics-api) npm package.
 
 ## Description
 
@@ -19,6 +19,73 @@ Inspired by this author's unlucky karaoke-night shifts behind the bar in a Texas
 
 
 ## Usage
+
+Root URL: TODO add root URL once deployed
+
+### `/search`
+
+Requires a json body object:
+
+```json
+{
+  title: string,
+  artist: string    // optional
+}
+```
+
+Returns an array of json objects:
+
+```json
+[
+  {
+    id: number,       // Genius song id
+    url: string,      // Genius webpage URL for the song
+    title: string,    // Song title
+    albumArt: string  // URL of the album art image (jpg/png)
+  },
+]
+```
+
+Sample request to `rooturl/search`:
+
+```json
+  {
+    "title": "M.A.A.D. City",
+    "artist": "Kendrick Lamar"
+  }
+```
+
+
+### `/lyrics`
+
+Requires a json body object:
+
+```json
+{
+  title: string,
+  artist: string      // optional
+}
+```
+
+Returns a json object:
+
+```json
+{
+  id: number,               // Genius song id
+  url: string,              // Genius webpage URL for the song
+  alteredLyrics: string,    // ALTERED Song lyrics
+  albumArt: string          // URL of the album art image (jpg/png)
+}
+```
+
+Sample request to `rooturl/lyrics`:
+
+```json
+  {
+    "title": "M.A.A.D. City",
+    "artist": "Kendrick Lamar"
+  }
+```
 
 ---
 
