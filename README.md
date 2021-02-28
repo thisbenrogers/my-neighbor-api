@@ -2,13 +2,13 @@
 
 A RESTful API that switches in the word 'NEIGHBOR', replacing instances of the n-word in song lyrics.
 
-Technologies include Express, knex, PostgreSQL, BcryptJS, and the Genius API through genius-lyrics npm package.
+This API uses Express and the Genius API through genius-lyrics npm package.
 
 ## Description
 
 This API offers a simple alternative to using the n-word in song.
 
-Using your favorite REST client, hit the below endpoints to register or login a user, search for a song by title, and return lyrics that have been specifically altered to improve potentially unfortunate choices. Doing better really is so easy.
+Using your favorite REST client hit the below endpoints to search for a song and/or return lyrics that have been specifically altered to improve potentially unfortunate choices. Doing better really is so easy.
 
 Inspired by this author's unlucky karaoke-night shifts behind the bar in a Texas college town, and by the below tweet:
 
