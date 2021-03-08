@@ -93,28 +93,17 @@ Requires a json body object:
 
 ```js
 {
-  "title": string,
-  "artist": string
+  "url": string
 }
 ```
 
-Returns a json object:
-
-```js
-{
-  "id": integer,               // Genius song id
-  "url": string,              // Genius webpage URL for the song
-  "alteredLyrics": string,    // ALTERED Song lyrics
-  "albumArt": string          // URL of the album art image (jpg/png)
-}
-```
+Returns a string of altered lyrics.
 
 Sample request to `rooturl/lyrics`:
 
 ```json
   {
-    "title": "M.A.A.D. City",
-    "artist": "Kendrick Lamar"
+    "url": "https://genius.com/Kendrick-lamar-maad-city-lyrics"
   }
 ```
 
