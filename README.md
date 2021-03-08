@@ -64,7 +64,7 @@ Returns an array of json objects:
 ```js
 [
   {
-    "id": number,       // Genius song id
+    "id": integer,       // Genius song id
     "url": string,      // Genius webpage URL for the song
     "title": string,    // Song title
     "albumArt": string  // URL of the album art image (jpg/png)
