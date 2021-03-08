@@ -52,7 +52,7 @@ You know who you are.
 
 Requires a json body object:
 
-```json
+```js
 {
   "title": string,
   "artist": string
@@ -61,7 +61,7 @@ Requires a json body object:
 
 Returns an array of json objects:
 
-```json
+```js
 [
   {
     "id": number,       // Genius song id
