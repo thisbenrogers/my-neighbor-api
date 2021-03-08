@@ -2,9 +2,9 @@ const { getLyrics } = require('genius-lyrics-api');
 
 /**
  * 
- * @param string url - url to genius lyrics page for specific song
+ * @param {string} url - url to genius lyrics page for specific song
  * 
- * @returns string lyrics - returns promise that resolves to string of lyrics
+ * @returns {string} lyrics - returns promise that resolves to string of lyrics
  * 
  */
 
@@ -23,6 +23,13 @@ const getOGLyrics = async url => {
   retObj.errors = errors;
   return retObj;
 }
+
+/**
+ * 
+ * @param {string} ogLyrics - a string of lyrics
+ * 
+ * @returns {string} newLYrics - a string of altered lyrics
+ */
 
 const alterLyrics = ogLyrics => {
   const searchRegEx = new RegExp(/niggah|nigga|nigguh/gmi)
