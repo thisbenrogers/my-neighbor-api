@@ -5,6 +5,7 @@ const helmet = require("helmet");
 const logger = require('../middleware/logger');
 
 const searchRouter = require('../search/search-router');
+const lyricsRouter = require('../lyrics/lyrics-router');
 
 const server = express();
 
@@ -14,6 +15,7 @@ server.use(express.json());
 server.use(logger);
 
 server.use("/search", searchRouter);
+server.use("/lyrics", lyricsRouter);
 
 server.get('/', (_, res) => {
   res.send('<h1>The <a href="https://github.com/thisbenrogers/my-neighbor-api">My Neighbor API</a></h1>');
