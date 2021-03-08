@@ -4,7 +4,13 @@ A RESTful API that switches in the word 'NEIGHBOR', replacing instances of the n
 
 This API uses Express and the Genius API through [genius-lyrics-api](https://github.com/farshed/genius-lyrics-api) npm package.
 
+---
+</br>
+</br>
+
 ## Description
+
+</br>
 
 This API offers a simple alternative to using the n-word in song.
 
@@ -17,19 +23,39 @@ Inspired by this author's unlucky karaoke-night shifts behind the bar in a Texas
 "Razor-sharp tweet by @kelseybuckles")
 ](https://twitter.com/kelseybuckles/status/1191719815473483776)
 
+---
+</br>
+</br>
+
+## Audience
+
+</br>
+
+You know who you are.
+
+---
+</br>
+</br>
 
 ## Usage
 
-Root URL: TODO add root URL once deployed
+</br>
 
-### `/search`
+> Root URL: [https://my-neighbor-api.herokuapp.com](https://my-neighbor-api.herokuapp.com)
+
+</br>
+</br>
+
+### `POST` to: `/search`
+
+</br>
 
 Requires a json body object:
 
 ```json
 {
-  title: string,
-  artist: string    // optional
+  "title": string,
+  "artist": string
 }
 ```
 
@@ -38,10 +64,10 @@ Returns an array of json objects:
 ```json
 [
   {
-    id: number,       // Genius song id
-    url: string,      // Genius webpage URL for the song
-    title: string,    // Song title
-    albumArt: string  // URL of the album art image (jpg/png)
+    "id": number,       // Genius song id
+    "url": string,      // Genius webpage URL for the song
+    "title": string,    // Song title
+    "albumArt": string  // URL of the album art image (jpg/png)
   },
 ]
 ```
@@ -55,44 +81,24 @@ Sample request to `rooturl/search`:
   }
 ```
 
-
-### `/lyrics`
-
-Requires a json body object:
-
-```json
-{
-  title: string,
-  artist: string      // optional
-}
-```
-
-Returns a json object:
-
-```json
-{
-  id: number,               // Genius song id
-  url: string,              // Genius webpage URL for the song
-  alteredLyrics: string,    // ALTERED Song lyrics
-  albumArt: string          // URL of the album art image (jpg/png)
-}
-```
-
-Sample request to `rooturl/lyrics`:
-
-```json
-  {
-    "title": "M.A.A.D. City",
-    "artist": "Kendrick Lamar"
-  }
-```
-
 ---
+</br>
+</br>
+
+
 
 ## Author
-### [BenR](https://github.com/thisbenrogers)
 
+</br>
+
+[BenR](https://github.com/thisbenrogers)
+
+---
+</br>
+</br>
 
 ## License
+
+</br>
 
 MIT © Ben Rogers
