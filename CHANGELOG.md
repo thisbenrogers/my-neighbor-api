@@ -1,3 +1,13 @@
+### 1.3.0 (2021-03-08)
+
+##### Documentation Changes
+
+*  Adds usage instructions for POST to /lyrics route (fa41c21e)
+
+##### New Features
+
+*  Adds POST to /lyrics in router (34204b95)
+
 ### 1.2.0 (2021-03-08)
 
 ##### Documentation Changes
